@@ -42,4 +42,4 @@ if __name__ == "__main__":
     argparse.add_argument('--dataset_name',type=str,help="Path to dataset name",default="/mnt/fish-detection-coco-dataset/benthic_f_small/rf_data")
     argparse.add_argument('--output_uri',type=str,help="Path to output directory for saving model checkpoints",default="/mnt/fish-detection-coco-dataset/benthic_f_small/models/rf_detr10")
     args = argparse.parse_args()
-    train_rf_detr(model_size=args.model_size,epochs=args.epochs,dataset_name=args.dataset_name,output_dir=args.output_dir)    
+    train_rf_detr(model_size=args.model_size,epochs=args.epochs,dataset_name=args.dataset_name,output_uri=args.output_uri)    
