@@ -1,3 +1,4 @@
 rfdetr
 argparse
 clearml
+huggingface_hub <1.0
