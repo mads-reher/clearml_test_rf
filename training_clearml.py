@@ -38,8 +38,8 @@ def train_rf_detr(model_size='base',epochs=20,dataset_name="/mnt/fish-detection-
 # tsp python training.py --model_size medium --epochs 20 --dataset_dir /mnt/fish-detection-coco-dataset/equinor_coco/rf_data_eq_all --output_dir /mnt/fish-detection-coco-dataset/equinor_coco/models/rf_med_eq20
 if __name__ == "__main__":
     argparse = argparse.ArgumentParser(description='Train RF-DETR model')
-    argparse.add_argument('--model_size',type=str,help="Model size: base, small, medium, large",default='base')
-    argparse.add_argument('--epochs',type=int,help="Number of training epochs",default=5)
+    argparse.add_argument('--model_size',type=str,help="Model size: base, small, medium, large",default='small')
+    argparse.add_argument('--epochs',type=int,help="Number of training epochs",default=1)
     argparse.add_argument('--dataset_name',type=str,help="Path to dataset name",default=("RF-DETR_Benthic","benthic_s_comb","1.0.1"))
     argparse.add_argument('--dataset_id',type=str,help="Dataset ID",default="e6522f92a45f4cbb89095f22b81548c9")
     argparse.add_argument('--output_uri',type=str,help="Path to output directory for saving model checkpoints",default="/mnt/fish-detection-coco-dataset/")
